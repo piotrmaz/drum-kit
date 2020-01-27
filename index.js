@@ -15,13 +15,16 @@ for (var i = 0; i < numberOfButtons; i++) {
 
 // detect keyboard pressed
 
-document.addEventListener("keydown", function (event)
-{
+document.addEventListener("keydown", function(event) {
+  console.log(event);
+})
+
+
+document.addEventListener("keydown", function(event) {
   MakeSound(event.key);
 })
 
-function MakeSound(key)
-{
+function MakeSound(key) {
 
   switch (key) {
     case "w":
@@ -41,7 +44,7 @@ function MakeSound(key)
 
     case "d":
       var tom4 = new Audio("sounds/tom-4.mp3");
-    tom4.play();
+      tom4.play();
       break;
 
     case "j":
@@ -55,12 +58,66 @@ function MakeSound(key)
       break;
 
     case "l":
-      var crash = new Audio("sounds/crash.mp3");
+      var crash = new Audio("sounds/1.mp3");
+      crash.play();
+      break;
+
+    case "2":
+      var crash = new Audio("sounds/2.mp3");
+      crash.play();
+      break;
+
+    case "3":
+      var crash = new Audio("sounds/3.mp3");
+      crash.play();
+      break;
+
+    case "4":
+      var crash = new Audio("sounds/4.mp3");
+      crash.play();
+      break;
+
+    case "5":
+      var crash = new Audio("sounds/5.mp3");
+      crash.play();
+      break;
+
+    case "6":
+      var crash = new Audio("sounds/6.mp3");
+      crash.play();
+      break;
+
+    case "7":
+      var crash = new Audio("sounds/7.mp3");
+      crash.play();
+      break;
+
+    case "8":
+      var crash = new Audio("sounds/8.mp3");
+      crash.play();
+      break;
+
+    case "9":
+      var crash = new Audio("sounds/9.mp3");
+      crash.play();
+      break;
+    case "0":
+      var crash = new Audio("sounds/0.mp3");
+      crash.play();
+      break;
+    case "Enter":
+      var crash = new Audio("sounds/enter.mp3");
+      crash.play();
+      break;
+    case "+":
+      var crash = new Audio("sounds/+.mp3");
       crash.play();
       break;
 
 
-    default: concole.log(buttonInnerHtml);
+
+    default:
+      concole.log(buttonInnerHtml);
 
   }
 
